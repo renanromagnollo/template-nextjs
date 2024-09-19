@@ -22,6 +22,7 @@ export default defineConfig({
         // Directories
         'node_modules/',
         'tests/',
+        'src/types/',
         // Files
         'src/app/layout.tsx',
       ],
