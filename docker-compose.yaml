@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  base_container:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /app
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      - ./node_modules:/app/node_modules
+
+  website:
+    extends: base_container
+    container_name: website_container
+    ports:
+      - "3000:3000"
+    networks:
+      - app
+    command: "npm run dev"
+
+networks:
+  app:
+    driver: bridge
