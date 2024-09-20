@@ -1,6 +1,7 @@
 {
   "files.insertFinalNewline": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
