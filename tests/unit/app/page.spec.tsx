@@ -18,4 +18,3 @@ describe('Home', () => {
     expect(screen.getByRole('link', { name: /Go to nextjs.org/i })).toBeDefined()
   })
 })
-

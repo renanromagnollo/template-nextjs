@@ -1,16 +1,16 @@
-import { ValueOf } from "@/types";
+import { ValueOf } from '@/types'
 
 export enum AppEnvType {
   DEVELOPMENT = 'development',
   TESTING = 'testing',
   PRODUCTION = 'production',
-  STAGING = 'staging'
+  STAGING = 'staging',
 }
 
-export type Env = ValueOf<typeof AppEnvType>;
+export type Env = ValueOf<typeof AppEnvType>
 export const ALLOWED_APP_ENVS: Env[] = Object.values(AppEnvType) as Env[]
 
 export type AppEnv = {
-  name: string;
-  env: Env;
+  name: string
+  env: Env
 }
