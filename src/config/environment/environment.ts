@@ -1,7 +1,7 @@
-import { AppEnv } from "./app-env";
+import { AppEnv } from './app-env'
 
 export type Environment = {
-  app: AppEnv;
+  app: AppEnv
   isDevelopment(): boolean
   isTesting(): boolean
   isProduction(): boolean

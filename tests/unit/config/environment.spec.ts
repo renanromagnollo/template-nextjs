@@ -1,5 +1,5 @@
-import { buildEnvironment } from '@/config'
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { buildEnvironment } from '@/config'
 
 const mockEnv = {
   APP_NAME: 'test-app',
@@ -11,7 +11,7 @@ const mockEnv = {
 describe('Environment', () => {
   beforeEach(() => {
     vi.stubGlobal('process', {
-      env: mockEnv
+      env: mockEnv,
     })
   })
 
@@ -37,7 +37,7 @@ describe('Environment', () => {
       env: {
         ...mockEnv,
         APP_ENV: 'development',
-      }
+      },
     })
 
     const environment = buildEnvironment()
@@ -50,7 +50,7 @@ describe('Environment', () => {
       env: {
         ...mockEnv,
         APP_NAME: undefined,
-      }
+      },
     })
 
     const environment = buildEnvironment()
@@ -63,7 +63,7 @@ describe('Environment', () => {
       env: {
         ...mockEnv,
         APP_ENV: undefined,
-      }
+      },
     })
 
     const environment = buildEnvironment()

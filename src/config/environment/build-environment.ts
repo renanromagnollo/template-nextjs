@@ -1,5 +1,5 @@
-import { AppEnvType } from "./app-env";
-import { Environment } from "./environment";
+import { AppEnvType } from './app-env'
+import { Environment } from './environment'
 
 export function buildEnvironment(): Environment {
   const appEnv = (process.env.APP_ENV || process.env.NEXT_PUBLIC_APP_ENV) as AppEnvType
@@ -20,6 +20,6 @@ export function buildEnvironment(): Environment {
     },
     isStaging(): boolean {
       return appEnv === AppEnvType.STAGING
-    }
+    },
   }
 }

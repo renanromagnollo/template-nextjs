@@ -7,6 +7,6 @@ export default defineConfig({
   test: {
     ...baseConfig.test,
     name: 'UNIT TEST',
-    include: ['tests/unit/**/*.spec.{ts,tsx}']
-  }
+    include: ['tests/unit/**/*.spec.{ts,tsx}'],
+  },
 })

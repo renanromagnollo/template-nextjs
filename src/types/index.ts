@@ -1,1 +1,1 @@
-export type { ValueOf } from './valueof';
+export type { ValueOf } from './valueof'
