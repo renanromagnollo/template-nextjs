@@ -1,0 +1,8 @@
+node_modules
+dist/*
+.next/*
+coverage/*
+tmp/*
+.cache
+public
+*.esm.js
